@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                 tv_num2.setText(answer.toString())
             }
             tv_num1.setText("")
+            dot = false
         }
 
         clearBtn.setOnClickListener {
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity() {
             tv_num2.setText("")
             number1 = 0.0
             operation = 0
+            dot = false
         }
     }
 
@@ -137,5 +139,6 @@ class MainActivity : AppCompatActivity() {
                 operation = 4
             }
         }
+        dot = false
     }
 }
